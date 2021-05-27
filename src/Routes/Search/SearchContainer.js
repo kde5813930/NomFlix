@@ -30,9 +30,9 @@ export default class extends React.Component {
 
    searchByTerm = async () => {
     const { searchTerm } = this.state;
-    this.setState({ loading:true }); // 첫째로 로딩을 해주고
+    this.setState({ loading:true }); 
     try{
-      const {                                            // 결과값이 일치하면 try로 반환
+      const {                                            
         data:{results: movieResults}
       } = await moviesApi.search(searchTerm);
       const {
@@ -42,10 +42,10 @@ export default class extends React.Component {
       this.setState({movieResults,tvResults });
       
     }catch{
-      this.setState({error:"Cant't find results."});      // 일치하지 않으면 에러 
+      this.setState({error:"Cant't find results."});      
           
     }finally{
-      this.setState({ loading: false });                  // 결과가 try든 catch든 마지막엔 finally로 반환
+      this.setState({ loading: false });                  
     }
   }
 

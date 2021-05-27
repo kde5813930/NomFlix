@@ -75,10 +75,6 @@ const HomePresenter = ({ nowPlaying, upComing, popular, error, loading}) => (
 );
 
 
-
-//children을 내부에 넣는 이유는 우리의 section에서 div 내부에 원하는 children을 넣을 수 있어야 하기 때문에!
-
-
 HomePresenter.propTypes = {
   nowPlaying: propTypes.array,
   upComing: propTypes.array,
@@ -89,6 +85,3 @@ HomePresenter.propTypes = {
 
 export default HomePresenter;
 
-
-//substring(start,end)
-// string 문자를 잘라쓸 수 있는 기능

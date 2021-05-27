@@ -16,7 +16,6 @@ export default () => (
       <Route path="/search" exact component={Search}/>
       <Route path="/movie/:id" component={Detail} />
       <Route path="/show/:id" component={Detail} />
-      {/* : <- 이것이 의미하는건 변경할 될 수 있는 이름이 오게하기 위해서 넣어주는것 */}
       <Redirect from="*" to="/"/>
     </Switch>
     </>

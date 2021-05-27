@@ -24,7 +24,6 @@ export default class extends React.Component {
     } = this.props;
     const { isMovie } = this.state;
     const parsedId = parseInt(id);
-    //parseInt는 string을 가져다 숫자로 변환하는 것 (id는 type이 string이기 때문에 변환해준다.)
     if(isNaN(parsedId)) {
       return push("/");
     }
